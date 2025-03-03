@@ -1,0 +1,76 @@
+.inputContainerOne {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.inputContainerTwo {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.inputContainerTwo select {
+  flex-grow: 0.9;
+}
+.inputContainerTwo input {
+  flex-grow: 1;
+}
+.modelContainer {
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.modelContainer h1 {
+  font-weight: 700;
+}
+
+.modelContainer input,
+.modelContainer select {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 10px;
+  color: black !important;
+  box-shadow: 0px 1px 4px black;
+}
+.modelContainer input:focus,
+.modelContainer select:focus {
+  outline: none;
+  border: none;
+}
+.buttonContainer {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.buttonContainer button:first-child {
+  font-family: sans-serif;
+  font-size: 14px;
+  background-color: #f4bb4a;
+  flex-grow: 0.4;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+.buttonContainer button:nth-child(2) {
+  background-color: #d9d9d9;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+@media screen and (max-width: 450px) {
+  .inputContainerOne {
+    flex-direction: column;
+  }
+  .inputContainerTwo {
+    flex-direction: column;
+  }
+  .buttonContainer {
+    flex-direction: column;
+  }
+  .inputContainerTwo input {
+    width: auto;
+  }
+}

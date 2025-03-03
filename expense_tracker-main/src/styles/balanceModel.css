@@ -1,0 +1,53 @@
+.balanceModelContainer {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 5px 10px;
+  font-family: "Ubuntu", sans-serif;
+}
+.balanceModelContainer h1 {
+  font-weight: 700;
+}
+.balanceModelContainer input,
+.balanceModelContainer button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 10px;
+  box-shadow: 0px 1px 4px black;
+}
+.balanceModelContainer input:focus {
+  border: none;
+  outline: none;
+}
+
+.balanceModelWrapper {
+  display: flex;
+  gap: 20px;
+}
+.balanceModelWrapper button:nth-child(2) {
+  background-color: #f4bb4a;
+  color: white;
+  font-size: 12px;
+  padding: 0px 13px;
+  font-weight: 700;
+}
+
+.balanceModelWrapper button:nth-last-child(1) {
+  background-color: #e3e3e3;
+  font-weight: 400;
+  font-size: 12px;
+  padding: 0px 22px;
+}
+@media screen and (max-width: 490px) {
+  .balanceModelWrapper {
+    flex-direction: column;
+  }
+  .balanceModelWrapper button:nth-child(2) {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .balanceModelWrapper button:nth-child(3){
+    padding: 10px;
+    font-size: 14px;
+  } 
+}

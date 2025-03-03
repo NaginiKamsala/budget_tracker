@@ -1,0 +1,187 @@
+.mainExpenseContainer {
+  min-height: 100vh;
+  background-color: var(--bgColor);
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.subContainerOne {
+  font-family: "Ubuntu", sans-serif;
+  padding: 12px 20px;
+}
+.subContainerOne > h1:first-child {
+  font-weight: 700;
+  font-style: normal;
+}
+.subOneWrapper {
+  background-color: #626262;
+  border-radius: 10px;
+  padding: 10px 50px 30px 50px;
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+.balanceContainer {
+  background-color: #9b9b9b;
+  color: white;
+  font-weight: 300;
+  font-size: 30px;
+  border-radius: 10px;
+  display: flex !important;
+  flex-direction: column;
+  padding: 35px 30px;
+  gap: 10px;
+  align-self: center;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0px 2px 4px 0px black;
+}
+.balanceContainer > button {
+  background-image: linear-gradient(to right, #b5dc52, #89e148);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  width: max-content;
+  align-self: center;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 7px 20px;
+}
+.expenseContainer {
+  background-color: #9b9b9b;
+  color: white;
+  font-weight: 300;
+  font-size: 30px;
+  border-radius: 10px;
+  text-align: center;
+  align-self: center;
+
+  display: flex;
+  flex-direction: column;
+  padding: 35px 30px;
+  gap: 10px;
+  width: 300px;
+  box-shadow: 0px 2px 4px 0px black;
+}
+.expenseContainer > button {
+  background-image: linear-gradient(to right, #ff9595, #ff4747, #ff3838);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  width: max-content;
+  align-self: center;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 7px 20px;
+}
+.pieChartContainer {
+  display: flex;
+  align-items: center;
+  flex-grow: 0.5;
+  flex-direction: column;
+}
+.pieIndexInfo {
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  gap: 10px;
+}
+.pieIndexInfo > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.entertainment {
+  background-color: #ff9304;
+  height: 10px;
+  width: 20px;
+}
+.travel {
+  background-color: #fde006;
+  height: 10px;
+  width: 20px;
+}
+.food {
+  background-color: #a000ff;
+  height: 10px;
+  width: 20px;
+}
+.recharts-wrapper path {
+  stroke: none !important;
+}
+.subContainerTwo {
+  font-family: "Ubuntu", sans-serif;
+  padding: 12px 20px;
+  display: flex;
+  gap: 40px;
+}
+.subContainerTwo h1 {
+  font-style: italic;
+}
+.recentTransactions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1.5;
+}
+.SubRecentTransactions {
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+}
+
+.topExpenses {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.subTopExpenses {
+  background-color: white;
+  color: black;
+  padding: 10px 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.subTopExpenses > div {
+  display: flex;
+  gap: 20px;
+}
+.subTopExpenses > div > p {
+  width: 30%;
+  text-align: end;
+}
+.subTopExpenses > div > div {
+  width: 75%;
+}
+.topExpensesChartDiv {
+  background-color: #8784d2;
+  color: #8784d2;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .subOneWrapper {
+    flex-wrap: wrap;
+    padding: 10px 10px 10px 10px;
+  }
+  .subContainerTwo {
+    flex-direction: column;
+  }
+  .subTopExpenses {
+    gap: 1rem;
+    padding: 10px 5px;
+  }
+  .subTopExpenses > div > p {
+    width: 50%;
+    text-align: center;
+  }
+  .subTopExpenses > div {
+    gap: 5px;
+  }
+}
